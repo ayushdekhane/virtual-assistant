@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Unlock&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 97vh;
+    width: 95vw;
+}
+.outercontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+
+}
+#left-div{
+    height: 100%;
+    width: 60%;
+   
+}
+#left-div img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#right-div{
+    color: white;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contain h1{
+    font-size: 3rem;
+    font-family: "Unlock", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 #name{
+    color: rgb(229, 170, 19);
+    font-size: 1.5em;
+}
+h1 #va{
+    color: rgb(12, 231, 235);
+    font-size: 1.2em;
+}
+#contain img{
+    
+    height: 200px;
+    width: 200px;
+    visibility: hidden;
+}
+#btn{
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to right,rgb(229, 170, 19),rgb(12, 231, 235));
+   font-size: 1.2rem;
+   box-shadow: 2px 2px 10px rgb(229, 170, 19),2px 2px 10px rgb(12, 231, 235);
+   border: none;
+}
+#btn i{
+    margin-right: 10px;
+}
+#btn:hover{
+    box-shadow: 2px 2px 20px rgb(229, 170, 19),2px 2px 20px rgb(12, 231, 235);
+   letter-spacing: 2px;
+}
