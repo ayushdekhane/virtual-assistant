@@ -15,11 +15,11 @@ function wishme(){
   
     let hours=day.getHours();
     if(hours>=0 && hours<12){
-        speak("good morning sir");
+        speak("good morning sir how can i help you");
     }else if(hours>=12 && hours <16){
-        speak("good afternoon sir");
+        speak("good afternoon sir how can i help you");
     }else{
-        speak("good evening sir");
+        speak("good evening sir how can i help you");
     }
         
     
@@ -69,7 +69,19 @@ function takecommand(message){
     else if(message.includes("open google")){
         speak("opening google");
         window.open("https://www.google.com");
-    }
+    }else if(message.includes("play" && "song" && "on" && "spotify")){
+         let song=message.replace("play","").replace("song","").replace("spotify","").replace("on","");
+         speak(`playing ${song} on spotify`);
+         window.open(`https://open.spotify.com/search/${song}`);
+        }
+        else if(message.includes("time")){
+            let time=new Date().toLocaleString(undefined,{hour:"numeric",minute:"numeric"})
+            speak(time);
+        }else if(message.includes("date")){
+            let Day=new Date().toLocaleString(undefined,{day:"numeric",month:"short",year:"numeric"});
+            speak(Day);
+
+        }
     else{
         let finaltext="this is what i found on internet regarding"+ message.replace("berlin","")
         speak(finaltext);
