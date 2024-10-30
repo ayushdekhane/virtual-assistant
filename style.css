@@ -46,6 +46,7 @@ body{
     font-family: "Unlock", serif;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px;
 }
 h1 #name{
     color: rgb(229, 170, 19);
@@ -59,7 +60,7 @@ h1 #va{
     
     height: 200px;
     width: 200px;
-    visibility: hidden;
+    display: none;
 }
 #btn{
     height: 2.5rem;
@@ -69,6 +70,9 @@ h1 #va{
    font-size: 1.2rem;
    box-shadow: 2px 2px 10px rgb(229, 170, 19),2px 2px 10px rgb(12, 231, 235);
    border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 #btn i{
     margin-right: 10px;
