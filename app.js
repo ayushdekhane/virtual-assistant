@@ -70,7 +70,7 @@ function takecommand(message){
         speak("opening google");
         window.open("https://www.google.com");
     }else if(message.includes("play" && "song" && "on" && "spotify")){
-         let song=message.replace("play","").replace("song","").replace("spotify","").replace("on","");
+         let song=message.replace("play","").replace("song","").replace("spotify","").replace("on","").replace("berlin","");
          speak(`playing ${song} on spotify`);
          window.open(`https://open.spotify.com/search/${song}`);
         }
