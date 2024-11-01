@@ -62,6 +62,14 @@ function takecommand(message){
         speak("opening facebook");
         window.open("https://www.facebook.com");
     }
+    else if(message.includes("open calculator")){
+        speak("opening calculator");
+        window.open("calculator:\\");
+    }
+    else if(message.includes("open whatsapp")){
+        speak("opening whatsapp");
+        window.open("whatsapp:\\");
+    }
     else if(message.includes("open instagram")){
         speak("opening instagram");
         window.open("https://www.instagram.com");
